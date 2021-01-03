@@ -18,7 +18,7 @@ const assertEqual = function (actual, expected) {  //will use eqArrays to check 
     console.log(`Assertion Passed ❤: ${actual} === ${expected}`)
     return true;
   } else { //else runs if is false
-    console.log(`Assertion Failed :no_entry:: ${actual} !== ${expected}`)
+    console.log(`Assertion Failed ⛔ :no_entry:: ${actual} !== ${expected}`)
     return false;
   }
 };
