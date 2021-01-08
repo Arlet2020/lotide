@@ -23,3 +23,8 @@ const assertArraysEqual = function (actual, expected) {
 
 assertArraysEqual([1,2,3], [1,2,3]);
 assertArraysEqual([1, 1, 3], [1, 2, 3]);
+
+// Second TEST CODE
+
+assertArraysEqual([1, 2, 3], ["Hola", 'Hola', "Mio"]);
+assertArraysEqual([1, 1, 3], [1, 1, 3]);

@@ -20,10 +20,9 @@ const assertEqual = function (actual, expected) {
 };
 
 //TEST CODE
-console.log(head([5,3,5]));
-console.log(head(["Hello", "Lighthouse", "Labs"]));
+assertEqual(head([5,3,5]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), 'Hi');
 assertEqual(head([2, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-
-assertEqual("Bootcampp", "Bootcamp");
+assertEqual("Bootcamp", "Bootcamp");
 assertEqual(6, 6);

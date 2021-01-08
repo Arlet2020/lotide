@@ -46,12 +46,30 @@ return newArray
 
 // TEST 
 
-const words = ["hello", "world", "lighthouse"];
+const words = ["hello", "world", "Lighthouse"];
 const result = without(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 //evaluate
-assertArraysEqual(result, ["hello", "world"]);
+assertArraysEqual(result, ["hello", "world", "Lighthouse"]);
 
 
 
 // 
+
+const words2 = ["FKJ", "Music", "Mimosa"];
+const result2 = without(words2, ['Mimosa']);
+assertArraysEqual(result2, ["FKJ", "Music"])
+
+// 
+
+const words3 = ["Gansito", "Bubble Bubble", "Roles"];
+const results3 = without(words3, ["Tama Roca", "Paleta Payaso"]);
+assertArraysEqual(results3, ["Tama Roca", "Chaka Chaka", "Paleta Payaso", "Roles"]);
+
+
+/// TEST CODE
+
+
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]) // => [2, 3]  //source + toRemove
+assertArraysEqual(without([1, 2, 3], [2, 3]), [1]) // => [1, 3]  //source + toRemove
+assertArraysEqual(without([1, 2, 3], [4]), [1, 2, 3]) // => [1, 2, 3]  //source + toRemove

@@ -54,5 +54,5 @@ const assertEqual = function (actual, expected) {
 
 //TEST CODE
 
-assertEqual("Bo, "Bootcamp");
+assertEqual("Bo", "Bootcamp");
 assertEqual(6, 6);
