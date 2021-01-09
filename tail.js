@@ -1,17 +1,22 @@
+
+
+const assertEqual = require('./assertEqual');
+
+
 let tail = function (index) {
   return index.slice(1);
 };
 
 // MY ASSERT EQUAL FUNCTION IMPLEMENTATION
 
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed ❤ : ${actual} === ${expected}`)
-  } else {
-    console.log(`Assertion Failed ⛔ : ${actual} !== ${expected}`);
-  }
+//const assertEqual = function (actual, expected) {
+//  if (actual === expected) {
+//    console.log(`Assertion Passed ❤ : ${actual} === ${expected}`)
+//  } else {
+//    console.log(`Assertion Failed ⛔ : ${actual} !== ${expected}`);
+//  }
 
-};
+//};
 
 //TEST CODE
 
@@ -28,3 +33,10 @@ const words2 = ["The Quenn", "Gambit"];
 tail(words2);
 
 assertEqual(words2.length, 1);
+
+
+// AGREGADO APENAS
+
+module.exports = assertEqual;
+
+module.exports = tail;

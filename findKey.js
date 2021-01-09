@@ -19,7 +19,7 @@ const findKey = function (object_to_be_evaluated, callback ) {
   } // arrays with for of.... first choice/sometimes/ or i++
 };
 
-
+module.exports = findKey;
 
 
 // objeto abajo

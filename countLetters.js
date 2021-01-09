@@ -37,6 +37,8 @@ const countLetters = (string) => { //mi funcion toma un string para retornar un 
   return results;
 }
 
+module.exports = countLetters;
+
 countLetters("lighthouse in the house")
  
 // ESTO SE REGRESA 

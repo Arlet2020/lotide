@@ -44,6 +44,8 @@ return newArray
 
 }
 
+module.exports = without;
+
 // TEST 
 
 const words = ["hello", "world", "Lighthouse"];

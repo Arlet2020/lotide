@@ -1,3 +1,8 @@
+
+const assertEqual = require('./assertEqual');
+
+
+
 function eqArrays(array1, array2) {  //does work for us, compare equality
   if (array1.length !== array2.length) {
     return false;
@@ -21,6 +26,8 @@ const assertArraysEqual = function (actual, expected) {
 
 };
 
+module.exports = assertArraysEqual;
+
 assertArraysEqual([1,2,3], [1,2,3]);
 assertArraysEqual([1, 1, 3], [1, 2, 3]);
 
@@ -28,3 +35,11 @@ assertArraysEqual([1, 1, 3], [1, 2, 3]);
 
 assertArraysEqual([1, 2, 3], ["Hola", 'Hola', "Mio"]);
 assertArraysEqual([1, 1, 3], [1, 1, 3]);
+
+
+
+module.exports = assertEqual;
+
+
+
+module.exports = assertArraysEqual;

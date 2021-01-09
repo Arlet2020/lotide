@@ -28,6 +28,8 @@ function findKeyByValue(obj, value) { // parameter and value
 
 };
 
+module.exports = findKeyByValue;
+
 console.log(Object.keys(bestTVShowsByGenre));
 
 

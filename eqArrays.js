@@ -1,7 +1,13 @@
+
+const assertEqual = require('./assertEqual');
+
+
 //Pseudocode
 //eqArrays finds if equal, takes in 2 arrays ie. Arugment 1 and 2, T or F
 // before check properties of arrays ie length or not an array
 //assertEqual will log them out, yes or no
+
+
 function eqArrays(array1, array2) {  //does work for us, compare equality
   if (array1.length !== array2.length) {
     return false;
@@ -13,15 +19,23 @@ function eqArrays(array1, array2) {  //does work for us, compare equality
   }
   return true; //return boolean
 }
-const assertEqual = function (actual, expected) {  //will use eqArrays to check (gives T or F), declare fn
-  if (eqArrays(actual, expected)) { //need value here using eqArrays, T of F if call it with 2 arrays. takes in 2 arguments, eval arrays 1 and arrays 2
-    console.log(`Assertion Passed ❤: ${actual} === ${expected}`)
-    return true;
-  } else { //else runs if is false
-    console.log(`Assertion Failed ⛔ :no_entry:: ${actual} !== ${expected}`)
-    return false;
-  }
-};
+
+module.exports = eqArrays;
+
+
+
+//const assertEqual = function (actual, expected) {  //will use eqArrays to check (gives T or F), declare fn
+//  if (eqArrays(actual, expected)) { //need value here using eqArrays, T of F if call it with 2 arrays. takes in 2 arguments, eval arrays 1 and arrays 2
+//    console.log(`Assertion Passed ❤: ${actual} === ${expected}`)
+//    return true;
+//  } else { //else runs if is false
+//    console.log(`Assertion Failed ⛔ :no_entry:: ${actual} !== ${expected}`)
+//    return false;
+//  }
+//};
+
+
+
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 3, 10], [1, 2, 3]), true); // => should PASS
@@ -30,3 +44,8 @@ assertEqual(eqArrays([4], [1, 2, 3]), false); // => should PASS
 //assertEqual(["1", "2", "3"], ["1", "2", 3]) // => false
 //console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
 //console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
+
+
+module.exports = assertEqual;
+
+module.exports = eqArrays;

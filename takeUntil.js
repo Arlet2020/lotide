@@ -21,7 +21,7 @@ const takeUntil = function (array, callback) {
  return newArray // 2 
 };
 
-
+module.exports = takeUntil;
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5]; // array
 const results1 = takeUntil(data1, x => x < 0);

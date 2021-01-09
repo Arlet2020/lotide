@@ -22,6 +22,8 @@ const letterPositions = function (sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 
 
 // ASSERT ARRAYS EQUAL
